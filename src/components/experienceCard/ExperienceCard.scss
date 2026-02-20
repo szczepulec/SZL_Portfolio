@@ -154,3 +154,24 @@
     font-size: 16px;
   }
 }
+
+
+/* ===================================================== */
+/* BANNER IMAGE CONTROL – FIT WIDTH, CENTER HEIGHT */
+/* ===================================================== */
+
+.rise-card .experience-banner,
+.vki-card .experience-banner {
+  background-size: 100% auto !important;   /* fit width */
+  background-position: center center !important; /* center vertically */
+  background-repeat: no-repeat !important;
+}
+
+/* Apply images */
+.rise-card .experience-banner {
+  background-image: url("../../assets/images/rise-background.png") !important;
+}
+
+.vki-card .experience-banner {
+  background-image: url("../../assets/images/vki-background.jpg") !important;
+}

@@ -6,19 +6,35 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("../../assets/images/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.greet-content {
   width: 90%;
+  margin: 0 auto;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
 }
 
 .greeting-main {
   display: flex;
 }
 
-.subTitle {
-  color: $subTitle !important;
+.greet-main .subTitle {
+  color: white;
 }
 
 .greeting-main {
@@ -38,19 +54,75 @@
   display: flex;
   margin-top: 40px;
 }
+
+
+.download-link-button .main-button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
+.cv-button {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;   // prepare border for transition
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cv-button:hover {
+  background-color: black;     // background changes
+  color: white;                // text changes
+  border-color: black;         // border becomes black
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.greeting-main {
+  position: relative;
+  z-index: 1;
+}
+
 .download-link-button {
   text-decoration: none;
+}
+
+.download-link-button:hover {
+  text-decoration: none;
+}
+
+.cv-button {
+  font-size: 1.03rem;   // slightly larger
+}
+
+
+.dark-mode .greet-main .greeting-text,
+.dark-mode .greet-main .greeting-text-p {
+  background-color: transparent !important;
 }
 
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: white !important;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 36px;
+  white-space: pre-line;
+  color: white !important;
 }
 
 .greeting-image-div > img {
@@ -64,6 +136,29 @@
   animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
+}
+.social-resume-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cv-button {
+  background-color: white;
+  color: black;
+  border: none;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.cv-button {
+  transform: translateY(-5px);
 }
 
 @keyframes wave {

@@ -1,0 +1,39 @@
+.news-section {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.news-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateX(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.news-date {
+  font-weight: 600;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.news-text {
+  line-height: 1.6;
+}

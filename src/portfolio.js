@@ -22,7 +22,7 @@ const illustration = {
 
 const greeting = {
   username: "Szczepulec7",
-  title: "Welcome to My Portfolio",
+  title: "Welcome to My Portfolio ",
   subTitle: emoji(
     "Here I showcase a selection of projects, experiences and notes.\n\n" +
     "Each project reflects my dedication to learning, problem-solving, and innovation, demonstrating both my technical skills and passion for aerospace engineering.\n\n" +
@@ -49,15 +49,19 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "News",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Technical Skills",
+  subTitle:
+    "Experience with simulation software, experimental aerodynamics, and advanced engineering analysis tools.",
+
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Numerical simulation of aerodynamic flows using CFD tools (RANS/LES), turbulence modelling, and mesh generation"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Experimental wind tunnel testing including PIV, hot-wire anemometry, and pressure measurement techniques"
+    ),
+    emoji(
+      "⚡ Post-processing, data analysis, and visualization using MATLAB, ParaView, and Python"
     )
   ],
 
@@ -65,60 +69,40 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 // TODO later swicht to logos of software I know
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python"
+  },
+  {
+    skillName: "MATLAB",
+    icon: "Matlab_Logo.png"
+  },
+  {
+    skillName: "OpenFOAM",
+    icon: "OpenFOAM_logo.png"
+  },
+  {
+    skillName: "ParaView",
+    icon: "paraview_log.png"
+  },
+  {
+    skillName: "ANSYS",
+    icon: "ansys.png"
+  },
+  {
+    skillName: "COMSOL",
+    icon: "comsol.png"
+  },
+  {
+    skillName: "Dassault Systèmes",
+    icon: "dassaultsystemes.png"
+  },
+  {
+    skillName: "Siemens",
+    icon: "siemens.png"
+  }
+],
+  display: true // Set false to hide this section, defaults to true
 };
 
 
@@ -177,25 +161,26 @@ const workExperiences = {
       company: "Pilatus Aircraft",
       companylogo: require("./assets/images/Pilatus_Aircraft.png"),
       date: "Starting Aug 2026",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Coming soon",
+      //descBullets: [
+      //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //]
     },
     {
       role: "Student Researcher",
-      company: "von Karman Institute for Fluid Dynamics",
+      company: "von Karman Institute",
       companylogo: require("./assets/images/VKI_logo_sqaure_blue.png"),
+      className: "vki-card",
       date: "Oct 2025 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Conducting aeroacoustic research focused on propeller–wing interaction noise. Developing neural network–based surrogate models trained on high-fidelity CFD and acoustic simulation data to predict tonal and broadband noise signatures."
     },
     {
       role: "Vehicle Control & Test Engineer",
       company: "RISE Student Team",
       companylogo: require("./assets/images/RISE.png"),
+      className: "rise-card",
       date: "Sep 2022 – Jul 2024",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Member of the founding team contributing to the rocket mechanical architecture and control systems development. Designed and integrated structural subsystems, actuator interfaces, and guidance, navigation, and control (GNC) elements. Led system-level testing and validation, contributing to three successful launch campaigns."
     }
   ]
 };
@@ -305,9 +290,9 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "News",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Last updated 20.02.2026",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -323,7 +308,43 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
+export const newsSection = {
+  display: true,
+  title: "News",
+  news: [
+    {
+      date: "Feb 13, 2026",
+      text:
+        "Conference paper titled 'Semi-Analytical Modeling of Blade Wake Deficits for Propeller–Wing Interaction in eVTOL Aeroacoustics' has been accepted for presentation at the 32nd AIAA/CEAS Aeroacoustics Conference in Belgium."
+    },
+    {
+      date: "Oct 06, 2025",
+      text:
+        "Started as a Student Researcher at the von Karman Institute for Fluid Dynamics."
+    },
+    {
+      date: "Sep 01, 2024",
+      text:
+        "Began a Master's degree in Aerospace Engineering at Delft University of Technology, alongside a second Master's degree in Wind Energy at the Technical University of Denmark (DTU)."
+    },
+    {
+      date: "Jul 14, 2024",
+      text:
+        "Graduated with a Bachelor's degree in Advanced Technology with a GPA of 7.94/10, ranking 4th out of 70 students."
+    },
+    {
+      date: "Jul 03, 2023",
+      text:
+        "Successfully completed the Honours Programme."
+    },
+    {
+      date: "Sep 22, 2022",
+      text:
+        "Joined Student Rocket Team RISE as a Vehicle Control and Test Engineer."
+    },
+  ]
 };
 
 // Talks Sections

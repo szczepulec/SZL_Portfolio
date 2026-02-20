@@ -15,17 +15,49 @@
   margin-bottom: 20px;
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
-}
-
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+
+
+.dev-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.software-skill-inline {
+  margin: 15px;
+  text-align: center;
+}
+.skill-icon-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  /* Light mode = black */
+  filter: grayscale(100%) brightness(0);
+
+  transition: transform 0.3s ease;
+}
+
+.software-skill-inline i {
+  font-size: 50px;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.software-skill-inline:hover i,
+.software-skill-inline:hover .skill-icon-image {
+  transform: scale(1.1);
+}
+
+/* Dark mode = white */
+.dark-mode .skill-icon-image {
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.dark-mode .software-skill-inline i {
+  color: #fff;
 }

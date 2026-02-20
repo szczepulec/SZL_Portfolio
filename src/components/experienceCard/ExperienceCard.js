@@ -1,24 +1,26 @@
-import React, {useState, createRef} from "react";
+import React, { useState, createRef } from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
   function getColorArrays() {
     const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    if (imgRef.current) {
+      setColorArrays(colorThief.getColor(imgRef.current));
+    }
   }
 
   function rgb(values) {
-    return typeof values === "undefined"
+    return typeof values === "undefined" || values.length === 0
       ? null
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
+  const GetDescBullets = ({ descBullets, isDark }) =>
+    descBullets
       ? descBullets.map((item, i) => (
           <li
             key={i}
@@ -28,25 +30,44 @@ export default function ExperienceCard({cardInfo, isDark}) {
           </li>
         ))
       : null;
+
+  // Assign class based on company name (no portfolio edits required)
+  const getCardClass = () => {
+    if (cardInfo.company.includes("RISE")) return "rise-card";
+    if (cardInfo.company.includes("Karman")) return "vki-card";
+    return "";
   };
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+    <div
+      className={`${
+        isDark ? "experience-card-dark" : "experience-card"
+      } ${getCardClass()}`}
+    >
+      {/* TOP BANNER */}
+      <div
+        style={{ background: rgb(colorArrays) }}
+        className="experience-banner"
+      >
         <div className="experience-blurred_div"></div>
+
         <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+          <h5 className="experience-text-company">
+            {cardInfo.company}
+          </h5>
         </div>
 
         <img
-          crossOrigin={"anonymous"}
+          crossOrigin="anonymous"
           ref={imgRef}
           className="experience-roundedimg"
           src={cardInfo.companylogo}
           alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
+          onLoad={getColorArrays}
         />
       </div>
+
+      {/* TEXT SECTION — UNTOUCHED */}
       <div className="experience-text-details">
         <h5
           className={
@@ -57,6 +78,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.role}
         </h5>
+
         <h5
           className={
             isDark
@@ -66,6 +88,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
+
         <p
           className={
             isDark
@@ -75,8 +98,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
+
         <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+          <GetDescBullets
+            descBullets={cardInfo.descBullets}
+            isDark={isDark}
+          />
         </ul>
       </div>
     </div>
