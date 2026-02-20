@@ -124,7 +124,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Delft University of Technology",
-      logo: require("./assets/images/TU_Delft_logo.jpg"), 
+      logo: require("./assets/images/TU_dlft_logo.jpg"), 
       subHeader: "Master of Science in Aerospace Engineering",
       duration: "September 2024 - July 2026",
       desc: "Selected for the Honours Programme at TU Delft.",
