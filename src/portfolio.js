@@ -120,26 +120,44 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Delft University of Technology",
+      logo: require("./assets/images/TU_Delft_LOGO_OLD.png"), 
+      subHeader: "Master of Science in Aerospace Engineering",
+      duration: "September 2024 - July 2026",
+      desc: "Selected for the Honours Programme at TU Delft.",
+      //descBullets: [
+      //  "Advanced coursework in Computational Fluid Dynamics (CFD), Turbomachinery, and Flight Dynamics",
+      //  "Applied finite element methods (FEM) for structural analysis and aeroelastic coupling studies",
+      //  "Team-based aircraft design project involving aerodynamic optimization and performance trade studies",
+      //  "Extensive use of MATLAB, Python, and ANSYS for simulation and data analysis"
+      //]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Technical University of Denmark",
+      logo: require("./assets/images/DTU_LOGO.png"), 
+      subHeader: "Exchange Semester – Wind Energy Engineering",
+      duration: "September 2024 - July 2026",
+      desc: "Specialized in aerodynamics & Turbulence Modelling.",
+      //descBullets: [
+      //  "Studied rotor aerodynamics and blade element momentum (BEM) theory",
+      //  "Advanced coursework in Computational Fluid Dynamics (CFD) in OpenFOAM and STARCCM+",
+      //]
+    },
+    {
+      schoolName: "University of Twente",
+      logo: require("./assets/images/Twente_LOGO.png"), 
+      subHeader: "Bachelor of Science in Advanced Technology",
+      duration: "September 2021 - July 2024",
+      desc: "Interdisciplinary engineering program focused on mechanical & Electrical engineering. Graduated in the top 10% of the cohort and completed the Honours Programme.",
+      //
+      //descBullets: [
+      //  "Developed strong foundation in mechanics, thermodynamics, and control systems",
+      //  "Minored in Aircraft Engineering",
+      //]
+      //
     }
   ]
 };
