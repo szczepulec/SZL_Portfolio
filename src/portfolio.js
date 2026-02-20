@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+// TODO Change animation
 
 // Splash Screen
 
@@ -20,13 +21,16 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Szczepulec",
-  title: "Hi all, I'm Saad",
+  username: "Szczepulec7",
+  title: "Welcome to My Portfolio",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Here I showcase a selection of projects, experiances and notes.",
+    "Each project reflects my dedication to learning, problem-solving, and innovation, demonstrating both my technical skills and passion for aerospace engineering.",
+    "Feel free to explore my journey and the knowledge I've gathered along the way.",
+    "   -Szczepan Letkiewicz"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // TODO Change
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,7 +49,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "News",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
