@@ -11,7 +11,6 @@ import SplashScreen from "./containers/splashScreen/SplashScreen";
 import { splashScreen } from "./portfolio";
 import { StyleProvider } from "./contexts/StyleContext";
 import { useLocalStorage } from "./hooks/useLocalStorage";
-import { useLocation } from "react-router-dom";
 
 function App() {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");

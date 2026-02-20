@@ -1,7 +1,4 @@
-import React from "react";
 import Header from "../components/header/Header";
-import ProjectsSection from "../containers/projects/Projects";
-import StartupProject from "../containers/StartupProjects/StartupProject";
 import Footer from "../components/footer/Footer";
 import ScrollToTopButton from "../containers/topbutton/Top";
 import "./Projects.scss";
