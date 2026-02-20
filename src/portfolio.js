@@ -24,10 +24,10 @@ const greeting = {
   username: "Szczepulec7",
   title: "Welcome to My Portfolio",
   subTitle: emoji(
-    "Here I showcase a selection of projects, experiances and notes.",
-    "Each project reflects my dedication to learning, problem-solving, and innovation, demonstrating both my technical skills and passion for aerospace engineering.",
-    "Feel free to explore my journey and the knowledge I've gathered along the way.",
-    "   -Szczepan Letkiewicz"
+    "Here I showcase a selection of projects, experiences and notes.\n\n" +
+    "Each project reflects my dedication to learning, problem-solving, and innovation, demonstrating both my technical skills and passion for aerospace engineering.\n\n" +
+    "Feel free to explore my journey and the knowledge I've gathered along the way.\n\n" +
+    "- Szczepan Letkiewicz"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // TODO Change
@@ -63,7 +63,7 @@ const skillsSection = {
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-
+// TODO later swicht to logos of software I know
   softwareSkills: [
     {
       skillName: "html-5",
@@ -118,7 +118,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -128,7 +128,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Delft University of Technology",
-      logo: require("./assets/images/TU_dlft_logo.jpg"), 
+      logo: require("./assets/images/TU_Delft_LOGO.png"), 
       subHeader: "Master of Science in Aerospace Engineering",
       duration: "September 2024 - July 2026",
       desc: "Selected for the Honours Programme at TU Delft.",
@@ -162,26 +162,7 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
 
 // Work experience section
 
@@ -189,10 +170,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Intern in Structural and System Testing",
+      company: "Pilatus Aircraft",
+      companylogo: require("./assets/images/Pilatus_Aircraft.png"),
+      date: "Starting Aug 2026",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -200,17 +181,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      role: "Student Researcher",
+      company: "von Karman Institute for Fluid Dynamics",
+      companylogo: require("./assets/images/vki-blue-square.eps"),
+      date: "Oct 2025 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      role: "Vehicle Control & Test Engineer",
+      company: "RISE Student Team",
+      companylogo: require("./assets/images/RISE.png"),
+      date: "Sep 2022 – Jul 2024",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
