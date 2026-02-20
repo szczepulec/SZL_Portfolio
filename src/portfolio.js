@@ -122,24 +122,6 @@ https://fontawesome.com/icons?d=gallery */
 };
 
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
 
 
 // Education Section
@@ -204,7 +186,7 @@ const workExperiences = {
     {
       role: "Student Researcher",
       company: "von Karman Institute for Fluid Dynamics",
-      companylogo: require("./assets/images/vki-blue-square.eps"),
+      companylogo: require("./assets/images/VKI_logo_sqaure_blue.png"),
       date: "Oct 2025 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
@@ -409,7 +391,6 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
   openSource,
   bigProjects,
