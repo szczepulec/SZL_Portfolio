@@ -128,12 +128,10 @@ const educationInfo = {
       subHeader: "Master of Science in Aerospace Engineering",
       duration: "September 2024 - July 2026",
       desc: "Selected for the Honours Programme at TU Delft.",
-      //descBullets: [
-      //  "Advanced coursework in Computational Fluid Dynamics (CFD), Turbomachinery, and Flight Dynamics",
-      //  "Applied finite element methods (FEM) for structural analysis and aeroelastic coupling studies",
-      //  "Team-based aircraft design project involving aerodynamic optimization and performance trade studies",
-      //  "Extensive use of MATLAB, Python, and ANSYS for simulation and data analysis"
-      //]
+      descBullets: [
+        "Conducted wind tunnel experiments, such as PIV and Hot-Wire Annenometry",
+        "Studied turbomachinery and propulsion system performance",
+      ]
     },
     {
       schoolName: "Technical University of Denmark",
@@ -141,23 +139,21 @@ const educationInfo = {
       subHeader: "Exchange Semester – Wind Energy Engineering",
       duration: "September 2024 - July 2026",
       desc: "Specialized in aerodynamics & Turbulence Modelling.",
-      //descBullets: [
-      //  "Studied rotor aerodynamics and blade element momentum (BEM) theory",
-      //  "Advanced coursework in Computational Fluid Dynamics (CFD) in OpenFOAM and STARCCM+",
-      //]
+      descBullets: [
+        "Studied rotor aerodynamics and blade element momentum (BEM) theory",
+        "Advanced coursework in Computational Fluid Dynamics (CFD) in OpenFOAM and STARCCM+",
+      ]
     },
     {
       schoolName: "University of Twente",
       logo: require("./assets/images/Twente_LOGO.png"), 
       subHeader: "Bachelor of Science in Advanced Technology",
       duration: "September 2021 - July 2024",
-      desc: "Interdisciplinary engineering program focused on mechanical & Electrical engineering. Graduated in the top 10% of the cohort and completed the Honours Programme.",
-      //
-      //descBullets: [
-      //  "Developed strong foundation in mechanics, thermodynamics, and control systems",
-      //  "Minored in Aircraft Engineering",
-      //]
-      //
+      desc: "Graduated in the top 10% of the cohort and completed the Honours Programme.",
+      descBullets: [
+        "Developed strong foundation in mechanics, thermodynamics, and control systems",
+        "Minored in Aircraft Engineering",
+      ]
     }
   ]
 };
