@@ -124,7 +124,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Delft University of Technology",
-      logo: require("./assets/images/TU_Delft_LOGO_OLD.png"), 
+      logo: require("./assets/images/TU_delft_logo.jpg"), 
       subHeader: "Master of Science in Aerospace Engineering",
       duration: "September 2024 - July 2026",
       desc: "Selected for the Honours Programme at TU Delft.",
@@ -146,7 +146,7 @@ const educationInfo = {
     },
     {
       schoolName: "University of Twente",
-      logo: require("./assets/images/Twente_LOGO.png"), 
+      logo: require("./assets/images/Twente_LOGO.jpg"), 
       subHeader: "Bachelor of Science in Advanced Technology",
       duration: "September 2021 - July 2024",
       desc: "Graduated in the top 10% of the cohort and completed the Honours Programme.",
