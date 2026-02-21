@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/SZL_Portfolio/static/css/main.6797906f.css",
+    "main.js": "/SZL_Portfolio/static/js/main.b7c5e46b.js",
+    "static/media/VKI_logo_sqaure_blue.png": "/SZL_Portfolio/static/media/VKI_logo_sqaure_blue.73f6ef634ec8afbd2667.png",
+    "static/media/rise-background.png": "/SZL_Portfolio/static/media/rise-background.cc468f5b497170d4a6ce.png",
+    "static/media/wind_tunnel_2.png": "/SZL_Portfolio/static/media/wind_tunnel_2.1b2ebb0bfa4f9e3f2158.png",
+    "static/media/background.jpg": "/SZL_Portfolio/static/media/background.1e32c299ea7c7199e810.jpg",
+    "static/media/vki-background.jpg": "/SZL_Portfolio/static/media/vki-background.23c63a3ce0c6c3bc8432.jpg",
+    "static/media/Montserrat-Regular.ttf": "/SZL_Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/TU_Delft_LOGO.png": "/SZL_Portfolio/static/media/TU_Delft_LOGO.f86e57f520faadec2998.png",
+    "static/media/Agustina.woff": "/SZL_Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/paraview_log.png": "/SZL_Portfolio/static/media/paraview_log.bbfc74fe5b5265f08240.png",
+    "static/media/Matlab_Logo.png": "/SZL_Portfolio/static/media/Matlab_Logo.acdac6d205ca85a71e90.png",
+    "static/media/googleAssistantLogo.webp": "/SZL_Portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
+    "static/media/codeInLogo.webp": "/SZL_Portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
+    "static/media/resume.pdf": "/SZL_Portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
+    "static/media/pwaLogo.webp": "/SZL_Portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
+    "static/media/saayaHealthLogo.webp": "/SZL_Portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
+    "static/media/nextuLogo.webp": "/SZL_Portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
+    "index.html": "/SZL_Portfolio/index.html",
+    "main.6797906f.css.map": "/SZL_Portfolio/static/css/main.6797906f.css.map",
+    "main.b7c5e46b.js.map": "/SZL_Portfolio/static/js/main.b7c5e46b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6797906f.css",
+    "static/js/main.b7c5e46b.js"
+  ]
+}
