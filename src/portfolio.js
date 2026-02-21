@@ -195,12 +195,86 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+export const researchSection = {
+  title: "Research Projects",
+  subtitle: "",
+  display: true,
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/BigProjects/MSC_Thesis/Cover.png"),
+      projectName:
+        "Master Thesis",
+      projectDesc:
+        "Aerodynamic and aeroacoustic installation effects in novel eVTOL configurations",
+      modalContent: {
+        subtitle: "Master Thesis",
+        content: [
+          {
+            type: "text",
+            value:
+              "Comning Soon",
+            fullWidth: true,
+          },
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_wind_Tunnel_1.jpg"),
+      projectName:
+        "Bachelor Thesis",
+      projectDesc:
+        "Quantifying Skin Friction Drag on Tyres: Wind Tunnel Analysis",
+      modalContent: {
+        subtitle: "BSc Thesis — Wind Tunnel Analysis",
+        content: [
+          {
+            type: "text",
+            value:
+              "My bachelor's thesis was an incredible opportunity and one of the highlights of my academic journey. I had the chance to work on designing a measurement setup for a wind tunnel, which allowed me to combine hands-on experimental work with independent design and simulation. I am extremely grateful for the trust and responsibility I was given, as it gave me the freedom to really take ownership of the project. \n\n" + 
+              "\n\n" + 
+              "This project helped me realize how much I enjoy research and experimental aerodynamics. The combination of problem-solving, creativity, and technical skill required to make the setup work was both challenging and extremely rewarding. I left the project more motivated than ever to pursue work in this field, and it confirmed that I want to continue doing research and design projects like this in the future.",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_Defense.jpg"),
+            caption: "Bachelor Thesis defense Presentation - July 14th 2024",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_wind_Tunnel_2.jpg"),
+            caption: "Members of project - June 21st 2024",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Big_Project/Bachelor_Thesis.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "video",
+            src: "./videos/BSC_Thesis_Video.mp4",
+            fullWidth: false,
+            column: "left",
+            caption: "Smoke visualization test in the wind tunnel."
+          }
+        ]
+      }
+    }
+  ]
+};
+
+const bigProjects = {
+  title: "Big Projects",
+  subtitle: "",
+  projects: [
+    {
+      image: require("./assets/images/placeholder.png"),
       projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -212,7 +286,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/placeholder.png"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -223,7 +297,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -239,7 +313,7 @@ const achievementSection = {
       title: "Google Code-In Finalist",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/placeholder.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
@@ -260,7 +334,7 @@ const achievementSection = {
       title: "Google Assistant Action",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/placeholder.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -273,7 +347,7 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/placeholder.png"),
       imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},
@@ -284,32 +358,12 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
-const blogSection = {
-  title: "News",
-  subtitle:
-    "Last updated 20.02.2026",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
+
 export const newsSection = {
   display: true,
   title: "News",
@@ -347,23 +401,47 @@ export const newsSection = {
   ]
 };
 
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+// TODO Delete the following sections
+const blogSection = {
+  title: "News",
+  subtitle:
+    "Last updated 20.02.2026",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [
+    {
+      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      description:
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+    },
+    {
+      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      title: "Why REACT is The Best?",
+      description:
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    ""
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "",
+      subtitle: "",
+      slides_url: "",
+      event_url: ""
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -376,7 +454,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -385,25 +463,25 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji(""),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "",
+  number: "",
+  email_address: ""
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
 
 export {
   illustration,

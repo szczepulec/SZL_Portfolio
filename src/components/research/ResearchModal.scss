@@ -1,0 +1,255 @@
+@import "../../_globalColor";
+
+/* ================= Overlay ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================= Modal Container ================= */
+
+.modal-content {
+  position: relative;
+  width: 90vw;
+  height: 75vh; /* slightly smaller than before */
+  max-width: 1600px;
+
+  border-radius: 18px;
+  padding: 2rem 2rem 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  transform: scale(0.95);
+  opacity: 0;
+  animation: modalEnter 0.25s ease forwards;
+}
+
+@keyframes modalEnter {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================= Light Mode ================= */
+
+.modal-light {
+  background: #e9edf3; /* darker than white for contrast */
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 40px 100px -20px rgba(0, 0, 0, 0.35);
+}
+
+/* ================= Dark Mode ================= */
+
+.modal-dark {
+  background: rgba(35, 45, 65, 0.95); /* lighter than page background */
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 40px 100px -20px rgba(0, 0, 0, 0.8);
+}
+
+/* ================= Header ================= */
+
+.modal-header {
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.modal-header {
+  margin: -2rem -2rem 1.5rem -2rem; /* extend to modal edges */
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-light .modal-header {
+  background: rgba(0, 0, 0, 0.05); /* darker than modal bg */
+}
+
+.modal-dark .modal-header {
+  background: rgba(255, 255, 255, 0.05); /* lighter than modal bg */
+}
+
+.modal-header-inner h2 {
+  margin-bottom: 0.3rem;
+}
+
+.modal-header-inner p {
+  opacity: 0.8;
+}
+
+/* ================= Scrollable Body ================= */
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Light Mode Scrollbar */
+
+.modal-light .modal-body::-webkit-scrollbar-thumb {
+  background: $buttonColor;
+}
+
+.modal-light .modal-body {
+  scrollbar-color: $buttonColor transparent;
+}
+
+/* Dark Mode Scrollbar */
+
+.modal-dark .modal-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.modal-dark .modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.modal-dark .modal-body {
+  scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
+}
+
+/* Base Scrollbar */
+
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ================= Content ================= */
+
+.modal-image {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.modal-pdf {
+  border-radius: 10px;
+}
+
+/* ================= Close Button ================= */
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: inherit;
+  transition: 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.2);
+}
+
+/* Ensure text color follows theme */
+
+.modal-light {
+  color: $titleColor;
+}
+
+.modal-dark {
+  color: white;
+}
+
+.two-column {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Independent stacking */
+
+.modal-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+}
+
+/* Full-width section BELOW columns */
+
+.full-width-container {
+  width: 100%;
+}
+
+/* Make full-width blocks truly full width */
+
+.full-width-container .modal-block {
+  width: 100%;
+}
+
+/* PDF fix */
+
+.modal-pdf {
+  width: 100%;
+  height: 700px;   /* increase height */
+  border-radius: 10px;
+  display: block;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .two-column {
+    flex-direction: column;
+  }
+}
+
+.modal-figure {
+  margin: 2px;
+}
+
+.modal-caption {
+  margin-top: -1rem;
+  font-size: 16px;
+  opacity: 0.75;
+  text-align: center;
+  font-style: italic;
+}
+
+.modal-text {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+
+/* ================= Video ================= */
+
+.modal-video {
+  width: 90%;
+  margin: 1.2rem auto 0 auto;  /* auto left & right centers it */
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: black;
+  display: block;              /* important */
+}
