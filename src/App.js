@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
+import { initGA } from "./analytics";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -31,6 +32,10 @@ function App() {
   const changeTheme = () => {
     setIsDark(!isDark);
   };
+
+  useEffect(() => {
+    initGA();
+  }, []);
 
   return (
     <div className={isDark ? "dark-mode" : null}>
