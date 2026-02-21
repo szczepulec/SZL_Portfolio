@@ -39,7 +39,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/szczepulec",
   linkedin: "https://www.linkedin.com/in/szczepan-letkiewicz-aa05251a1/",
-  gmail: "szczepan@letkiewicz.pl",
+  gmail: "mailto:szczepan@letkiewicz.pl",
   instagram: "https://www.instagram.com/szczepulec7/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
