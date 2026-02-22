@@ -106,7 +106,198 @@ https://fontawesome.com/icons?d=gallery */
 };
 
 
+export const projectsSection = {
+  title: "Projects",
+  subtitle: "",
+  display: true,
+  projects: [
+    {
+      image: require("./assets/images/Projects/Delft/PIV_image.jpg"),
+      projectName: "Flow Measurement Techniques",
+      projectDesc:
+        "Wind Tunnel Experiments including PIV, Hotwire Anemometry, and Pressure Probes.",
 
+      language: "Python",
+      color: "#006eff", 
+      size: "06.2025",
+      github: "https://github.com/szczepulec/Flow-Measurement-Techniques", // optional
+
+      modalContent: {
+        subtitle: "Experiments conducted at TU Delft part of Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "During this course, I had the chance to step into the low-speed wind tunnel at Delft and really get hands-on with the flow around an airfoil at different angles of attack. One of the highlights was using Particle Image Velocimetry (PIV) to capture the flow field, a technique that let me visualize the invisible patterns of air moving around the wing. I also worked with LaVision DaVis software to collect and process the data, which felt a bit like being both an engineer and a detective, piecing together clues from the flow. On top of that, we took additional measurements using hot-wire anemometry and pressure probes, which added more layers of understanding to what was happening in the tunnel. \n\n" + 
+              "\n\n" + 
+              "One of the biggest lessons I took away was just how much preparation goes into an experiment before you even turn anything on. The planning, calibrating, and setting up can take hours, and it really drives home that experimental work is as much about preparation as it is about execution. Seeing the theory we learn in class come alive in the lab was both fascinating and incredibly rewarding.",
+            column: "left"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Flow_Measurements_Post_processing.jpg"),
+            caption: "LaVision DaVis software for PIV - May 26th 2025",
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Flow_Measurments.pdf",
+            fullWidth: true
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Rotor_wake_cover.png"),
+      projectName: "Rotor and Wake Aerodynamics",
+      projectDesc:
+        "Two methods for analysing propeller and wind turbine performance, Blade Element Method (BEM) and Lifiting Line Theory (LLT)",
+
+      language: "Python",
+      color: "#006eff", 
+      size: "05.2025",
+      github: "https://github.com/szczepulec/Rotor-Wake-Aerodynamics", // optional
+
+      modalContent: {
+        subtitle: "Assingment reports and code, part of TU Delt Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "Blade Element Momentum Theory with Yaw \n\n" + 
+              "\n\n" + 
+              "For this assignment, we had to develop a BEMT code that could handle yawed flow conditions. Implementing the yaw effects and properly coupling the blade element and momentum parts took some time to get right, but it was really satisfying once the code started producing realistic results. \n\n" + 
+              "\n\n" + 
+              "Working on this also introduced me to wake modeling, which I found to be a really fascinating and complex topic. Understanding how the wake develops and interacts with the rotor adds a whole new layer of difficulty to the problem, but it’s also what makes rotor aerodynamics so interesting.",
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Rotor_Wake_BEM.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "text",
+            value:
+              "Lifting Line Theory Assignment  \n\n" + 
+              "\n\n" + 
+              "Setting up the lifting line code was definitely a challenge. Getting all the coordinate transforms and vortex filament discretisations to work correctly took some time to figure out.  \n\n" + 
+              "\n\n" + 
+              "But once it was running for a single rotor, it became clear why this method is such a powerful tool for preliminary design of distributed propellers and wind turbines. ",
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Rotor_Wake_LL.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Aeroelasticity_1.png"), 
+      projectName: "Aeroelasticity",
+      projectDesc:
+        "Evaluation of structural and aeroelastic properties and stability of a typical section with a control surface.",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "05.2025",
+      github: "https://github.com/szczepulec/Aeroelasticity", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of TU Delt Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+            "I find it fascinating how much of the aeroelasticity field is based on the pioneering work of Theodor Theodorsen. Unsteady aerodynamics still feels a bit like magic to me; it’s challenging to fully grasp how airflow reacts to moving and flexible structures. What makes this topic really exciting is its direct application in aircraft design. Understanding aeroelastic effects like flutter and dynamic loads is crucial for designing safe and efficient wings, rotor blades, and other components. ",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Aeroelasticity.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Aeroelasticity_2.png"),
+            fullWidth: false,
+            column: "left"
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Turbomachinery.png"), // TODO Change
+      projectName: "Turbomachinery",
+      projectDesc:
+        "Two methods for analyzing propeller and wind turbine performance: Blade Element Momentum (BEM) theory and Lifting Line Theory (LLT).",
+
+      language: "MULTALL",
+      color: "#9900ff", 
+      size: "04.2025",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment poster and code, part of TU Delt Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "Turbomachinery Aero Engine Fan Project \n\n" + 
+              "\n\n" + 
+              "In this short project, I used MULTALL to design and optimise an aero engine fan as part of a turbomachinery course. It was a tough but really enjoyable challenge to balance aerodynamic performance, efficiency, and mechanical limits in such a complex machine. While I wasn’t a big fan of the MULTALL software itself, the project gave me a much better understanding of how difficult fan design and optimisation are in practice. ",
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbomachinery.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/Projects/Delft/cfd_animation.mp4"), 
+      projectName: "Computational Fluid Dynamics",
+      projectDesc:
+        "A handful of projects in Simcenter STAR-CCM+ including overset meshing, Lagrangian spray modeling, combustion, and supersonic flow.",
+
+      language: "STAR-CCM+",
+      color: "#ff0000", 
+      size: "12.2024",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment poster and code, part of DTU Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "Turbomachinery Aero Engine Fan Project \n\n" + 
+              "\n\n" + 
+              "In this short project, I used MULTALL to design and optimise an aero engine fan as part of a turbomachinery course. It was a tough but really enjoyable challenge to balance aerodynamic performance, efficiency, and mechanical limits in such a complex machine. While I wasn’t a big fan of the MULTALL software itself, the project gave me a much better understanding of how difficult fan design and optimisation are in practice. ",
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbomachinery.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+        ]
+      }
+    }
+  ]
+};
 
 // Education Section
 

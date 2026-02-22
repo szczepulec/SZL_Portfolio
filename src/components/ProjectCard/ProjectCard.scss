@@ -1,0 +1,123 @@
+@import "../../_globalColor";
+
+/* ============================= */
+/* CARD CONTAINER */
+/* ============================= */
+
+.repo-card-div {
+  background-color: $lightBackground1;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* REMOVE forced equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* DARK BASE */
+.dark-card-mode {
+  background-color: $darkBackground;
+  box-shadow: 0px 10px 30px -15px rgba(149, 76, 233, 0.3);
+
+  .repo-name,
+  .repo-description,
+  .repo-stats p {
+    color: #ffffff !important;
+  }
+}
+
+/* 🔥 HOVER — FULL PURPLE CARD */
+.repo-card-div:hover {
+  background-color: #5b2dab;
+  box-shadow: 0px 20px 40px -10px rgba(149, 76, 233, 0.7);
+  transform: translateY(-6px);
+}
+
+/* TEXT TURNS WHITE ON HOVER */
+.repo-card-div:hover .repo-name,
+.repo-card-div:hover .repo-description,
+.repo-card-div:hover .repo-left-stat p,
+.repo-card-div:hover .repo-right-stat p {
+  color: white;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.repo-name-div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.repo-svg {
+  fill: currentColor;
+}
+
+.repo-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.project-card-image {
+  width: 100%;
+  height: auto;          // ← allow natural height
+  object-fit: contain;   // ← prevent cropping
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* ============================= */
+/* DESCRIPTION */
+/* ============================= */
+
+.repo-description {
+  margin-top: 0rem;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $cardSubtitle;
+
+  /* REMOVE forced equal height */
+}
+
+/* ============================= */
+/* STATS */
+/* ============================= */
+
+.repo-stats {
+  margin-top: -1rem; /* smaller spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repo-left-stat span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.language-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.repo-right-stat p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: $cardSubtitle;
+}
+
+.repo-card-div {
+  padding: 1.8rem 1.8rem 0.3rem 1.8rem;
+}
