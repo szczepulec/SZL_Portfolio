@@ -277,20 +277,255 @@ export const projectsSection = {
       github: "", // optional
 
       modalContent: {
-        subtitle: "Assingment poster and code, part of DTU Master's course.",
+        subtitle: "Assingment reports and simulation files, part of DTU Master's course.",
         content: [
           {
             type: "text",
             value:
-              "Turbomachinery Aero Engine Fan Project \n\n" + 
+              "TODO",
+            column: "right"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Full_spectrum.png"), 
+      projectName: "Turbulent Flows",
+      projectDesc:
+        "Through three assignments, I examined turbulent flow behaviour using both laboratory measurements and numerical simulations, evaluating turbulence statistics, wall effects, and modelling accuracy.",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "11.2024",
+      github: "https://github.com/szczepulec/Turbulent-Flows", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of DTU Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "Across these three assignments, I analysed turbulent flows from both an experimental and computational perspective. I worked with LDV measurements of open channel flow to extract friction velocity, turbulence statistics, Reynolds stresses, and turbulent kinetic energy, and compared the results with theoretical models and RANS predictions. \n\n" + 
               "\n\n" + 
-              "In this short project, I used MULTALL to design and optimise an aero engine fan as part of a turbomachinery course. It was a tough but really enjoyable challenge to balance aerodynamic performance, efficiency, and mechanical limits in such a complex machine. While I wasn’t a big fan of the MULTALL software itself, the project gave me a much better understanding of how difficult fan design and optimisation are in practice. ",
+              "In parallel, I implemented and evaluated RANS, URANS, and LES models in both simplified channel flow and external cylinder flow cases, performing mesh sensitivity studies and assessing model accuracy against reference data. Together, these projects strengthened my understanding of turbulence theory, wall-bounded flow behaviour, and the practical implementation and validation of CFD turbulence models.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbulent_Flows_1.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbulent_Flows_2.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+           {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbulent_Flows_3.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/longLES.mp4"), 
+      projectName: "Turbulence Modelling",
+      projectDesc:
+        "Investigating flow around a cylinder in OpenFOAM using LES and URANS, as well as different turbulence models.",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "11.2024",
+      github: "https://github.com/szczepulec/Turbulence-modeling", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of DTU Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "In this project, I modelled fully developed turbulent channel flow using the RANS framework and implemented both Prandtl’s algebraic mixing-length model and the two-equation k–ε model from first principles. I derived the governing equations, discretized them using finite difference methods, and constructed matrix-based solvers to compute velocity profiles and Reynolds stresses. \n\n" + 
+              "\n\n" + 
+              "By comparing results with DNS data, I developed a deeper understanding of the turbulence closure problem, the limitations of eddy-viscosity assumptions, and the critical role of near-wall modelling through van Driest damping. The project strengthened my ability to translate turbulence theory into stable numerical implementations and to evaluate model accuracy across different Reynolds numbers and flow regions. ",
             column: "right"
           },
           {
             type: "pdf",
-            src: "./pdf/Projects/Delft/Turbomachinery.pdf",
+            src: "./pdf/Projects/Delft/Turbulence_Modelling_1.pdf",
             fullWidth: false,
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Turbulence_Modelling_2.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "text",
+            value:
+              "In this project, I performed CFD simulations of turbulent flow past a circular cylinder at Re = 3900 using OpenFOAM, comparing 2D URANS models (k–ε, k–ω SST) with 3D LES approaches. I designed the computational domain, estimated wall spacing using boundary layer theory to ensure wall-resolved simulations, and conducted mesh sensitivity studies to assess numerical accuracy. \n\n" + 
+              "\n\n" + 
+              "Through analysis of vortex shedding, pressure coefficients, turbulence statistics, and resolved TKE ratios, I gained practical insight into the strengths and limitations of URANS versus LES in capturing unsteady wake dynamics. This work deepened my understanding of turbulence modelling in industrial CFD workflows, particularly regarding grid resolution, inlet turbulence specification, and sources of numerical dissipation.",
+            column: "left"
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Wind_Turbine_outside.png"), 
+      projectName: "Wind Turbine Design",
+      projectDesc:
+        "Three wind turbine engineering projects covering aerodynamic blade design, electrical drivetrain modelling, and full system-level turbine development. Together, they demonstrate a structured design approach integrating performance optimisation, structural considerations, economic analysis, and grid-connected power system design.",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "01-06.2025",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of DTU & TUDelft Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project applied the Blade Element Momentum (BEM) method to evaluate and optimise the aerodynamic performance of the DTU 10 MW reference wind turbine. Optimal tip speed ratio and pitch angle were determined using Glauert and Madsen correction models, followed by construction of power and thrust curves across the operational wind speed range and validation of aerodynamic load distributions against Ashes simulations. \n\n" + 
+              "\n\n" + 
+              "Through this work, I developed a deeper understanding of rotor aerodynamics, pitch regulation, controller-driven power limitation, annual energy production estimation using Weibull statistics, and gradient-based optimisation of blade chord and twist.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/WTT_1.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "video",
+            src: require("./assets/images/Projects/Delft/Wind_turbine.mp4"),
+            fullWidth: false,
+            caption: "DTU wind Turbine generator in Risø - November 20th 2024",
+            column: "left"
+          },
+          {
+            type: "text",
+            value:
+              "This assignment focused on modelling the electrical system of a 10 MW offshore wind turbine, including a permanent magnet synchronous generator, step-up transformer, subsea cable connection, and grid interface. Two MPPT control strategies were analysed using phasor diagrams and equivalent circuits, and nonlinear circuit equations were solved to evaluate generator losses, reactive power flow, and overall wind farm efficiency. \n\n" + 
+              "\n\n" + 
+              "From this project, I gained practical insight into complex power analysis, transformer and cable modelling, reactive power control, and the interaction between turbine control strategies and grid-level performance.",
+            column: "right"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/WTT_2.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Wind_turbine_generator.png"),
+            fullWidth: false,
+            caption: "Wind turbine generator - November 20th 2024",
+            column: "right"
+          },
+                              {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Delft_WTT.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "text",
+            value:
+              "This project followed a structured, multidisciplinary design process for a 3.5 MW onshore wind turbine, starting from market analysis and site conditions and progressing through aerodynamic sizing, structural scaling, drivetrain selection, control design, and certification checks. \n\n" + 
+              "\n\n" + 
+              "The rotor diameter was optimised using Levelized Production Cost analysis, and aerodynamic performance was refined using BEM-based chord and twist optimisation. Through this work, I developed a stronger understanding of how aerodynamic efficiency, structural constraints, economic considerations, and grid integration requirements interact within a complete wind turbine system design.",
+            column: "left"
+          },
+
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Technical_Drawing.png"), 
+      projectName: "Introduction to Mechanical Engineering",
+      projectDesc:
+        "Design project of a gear transmission output shaft, learning aspects of machine elements, technical product definition and manufacturing systems.",
+
+      language: "SolidWORKS",
+      color: "#00ff37", 
+      size: "05.2024",
+      github: "https://github.com/szczepulec/Intro_To_Mechanical_Eng", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and CAD file, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project presents the complete mechanical design of a gear transmission output shaft for a cooling fan system, including spur gear dimensioning, shaft stress analysis, key selection, bearing sizing, and coupling choice. \n\n" + 
+              "\n\n" + 
+              "Through this work, I developed a stronger understanding of iterative machine element design, fatigue and contact stress verification, load path analysis using shear and bending moment diagrams, and the integration of standardized components into a manufacturable and maintainable mechanical assembly. ",
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Intro_to_Mech_Eng.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Solid_Works.png"),
+            fullWidth: false,
+            caption: "SolidWORKS CAD project - April 21st 2024",
+            column: "left"
+          },
+        ]
+      }
+    }
+    ,
+    {
+      image: require("./assets/images/Projects/Delft/Aircraft_eng_minor.png"), 
+      projectName: "Aircraft Engineering Minor",
+      projectDesc:
+        "",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "01.2024",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project presents the complete mechanical design of a gear transmission output shaft for a cooling fan system, including spur gear dimensioning, shaft stress analysis, key selection, bearing sizing, and coupling choice. \n\n" + 
+              "\n\n" + 
+              "Through this work, I developed a stronger understanding of iterative machine element design, fatigue and contact stress verification, load path analysis using shear and bending moment diagrams, and the integration of standardized components into a manufacturable and maintainable mechanical assembly. ",
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Intro_to_Mech_Eng.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Solid_Works.png"),
+            fullWidth: false,
+            caption: "SolidWORKS CAD project - April 21st 2024",
             column: "left"
           },
         ]
@@ -298,6 +533,8 @@ export const projectsSection = {
     }
   ]
 };
+
+
 
 // Education Section
 
