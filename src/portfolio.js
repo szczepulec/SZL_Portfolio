@@ -567,7 +567,7 @@ const educationInfo = {
       logo: require("./assets/images/Twente_LOGO.jpg"), 
       subHeader: "Bachelor of Science in Advanced Technology",
       duration: "September 2021 - July 2024",
-      desc: "Graduated in the top 10% of the cohort and completed the Honours Programme.",
+      // desc: "Graduated in the top 10% of the cohort and completed the Honours Programme.",
       descBullets: [
         "Grade = 7.94/10",
         "Honours Programme, 30 ECTS | Top 10% Selective Extracurricular Programme",
