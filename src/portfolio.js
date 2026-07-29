@@ -546,10 +546,10 @@ const educationInfo = {
       logo: require("./assets/images/TU_Delft_LOGO.png"), 
       subHeader: "Master of Science in Aerospace Engineering",
       duration: "September 2024 - July 2026",
-      desc: "Selected for the Honours Programme at TU Delft.",
+      // desc: "Selected for the Honours Programme at TU Delft.",
       descBullets: [
-        "Conducted wind tunnel experiments, such as PIV and Hot-Wire Annenometry",
-        "Studied turbomachinery and propulsion system performance",
+        "Grade = 8.77/10 (Cum Laude)",
+        "Honours Programme, 20 ECTS | Top 10% Selective Extracurricular Programme",
       ]
     },
     {
@@ -557,10 +557,9 @@ const educationInfo = {
       logo: require("./assets/images/DTU_LOGO.png"), 
       subHeader: "Master of Science in Wind Energy",
       duration: "September 2024 - July 2026",
-      desc: "Specialized in aerodynamics & Turbulence Modelling.",
+      // desc: "Specialized in aerodynamics & Turbulence Modelling.",
       descBullets: [
-        "Studied rotor aerodynamics and blade element momentum (BEM) theory",
-        "Advanced coursework in Computational Fluid Dynamics (CFD) in OpenFOAM and STARCCM+",
+        "Grade = 11.11/12",
       ]
     },
     {
@@ -570,8 +569,8 @@ const educationInfo = {
       duration: "September 2021 - July 2024",
       desc: "Graduated in the top 10% of the cohort and completed the Honours Programme.",
       descBullets: [
-        "Developed strong foundation in mechanics, thermodynamics, and control systems",
-        "Minored in Aircraft Engineering",
+        "Grade = 7.94/10",
+        "Honours Programme, 30 ECTS | Top 10% Selective Extracurricular Programme",
       ]
     }
   ]
