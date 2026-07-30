@@ -11,6 +11,7 @@ const ProjectsPage = () => {
       <Header />
       <ResearchSection />
       <ProjectsSection />
+      <p className="page-last-updated">Last updated: 30.07.2026</p>
       <Footer />
       <ScrollToTopButton />
     </>

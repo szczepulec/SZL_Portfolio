@@ -280,9 +280,29 @@ export const projectsSection = {
           {
             type: "text",
             value:
-              "TODO",
+              "Throughout my Advanced Computational Fluid Dynamics coursework, I completed a series of projects using Siemens STAR-CCM+ to investigate a wide range of aerodynamic and multiphase flow problems. These assignments strengthened my understanding of turbulence modelling, mesh generation, numerical verification and validation, fluid-structure interaction, and optimization techniques.\n\n" +
+
+"My work included dynamic mesh simulations of vortex-induced vibrations using morphing and overset mesh methods, transitional airfoil simulations with SST k-ω and Gamma-ReTheta turbulence models, adjoint-based aerodynamic optimization, and Lagrangian spray and combustion modelling for diesel engine applications. Across these projects I performed mesh independence studies, sensitivity analyses, model validation against experimental data, and extensive post-processing to interpret complex flow phenomena and evaluate numerical accuracy. These assignments provided valuable hands-on experience in applying CFD to realistic engineering problems while developing strong skills in simulation setup, verification, validation, and technical reporting.",
             column: "right"
-          }
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/CFD_3.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/CFD_2.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/CFD_1.pdf",
+            fullWidth: false,
+            column: "right"
+          },
         ]
       }
     }
