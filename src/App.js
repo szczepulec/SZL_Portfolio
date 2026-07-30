@@ -14,8 +14,7 @@ import { StyleProvider } from "./contexts/StyleContext";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 

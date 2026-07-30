@@ -238,7 +238,7 @@ export const projectsSection = {
       image: require("./assets/images/Projects/Delft/Turbomachinery.png"), // TODO Change
       projectName: "Turbomachinery",
       projectDesc:
-        "Two methods for analyzing propeller and wind turbine performance: Blade Element Momentum (BEM) theory and Lifting Line Theory (LLT).",
+        "Turbomachinery Aero Engine Fan Project: aerodynamic design and optimisation of a jet engine fan stage using MULTALL, balancing performance, efficiency, and mechanical limits.",
 
       language: "MULTALL",
       color: "#9900ff", 
@@ -251,8 +251,6 @@ export const projectsSection = {
           {
             type: "text",
             value:
-              "Turbomachinery Aero Engine Fan Project \n\n" + 
-              "\n\n" + 
               "In this short project, I used MULTALL to design and optimise an aero engine fan as part of a turbomachinery course. It was a tough but really enjoyable challenge to balance aerodynamic performance, efficiency, and mechanical limits in such a complex machine. While I wasn’t a big fan of the MULTALL software itself, the project gave me a much better understanding of how difficult fan design and optimisation are in practice. ",
             column: "right"
           },
@@ -495,9 +493,9 @@ export const projectsSection = {
     ,
     {
       image: require("./assets/images/Projects/Delft/Aircraft_eng_minor.png"), 
-      projectName: "Aircraft Engineering Minor",
+      projectName: "Aircraft Engineering Project",
       projectDesc:
-        "",
+        "Design of a fixed-wing unmanned aircraft for disaster relief, following the complete conceptual aircraft design process from mission requirements to a final design.",
 
       language: "MatLAB",
       color: "#ffcc00", 
@@ -510,24 +508,16 @@ export const projectsSection = {
           {
             type: "text",
             value:
-              "This project presents the complete mechanical design of a gear transmission output shaft for a cooling fan system, including spur gear dimensioning, shaft stress analysis, key selection, bearing sizing, and coupling choice. \n\n" + 
-              "\n\n" + 
-              "Through this work, I developed a stronger understanding of iterative machine element design, fatigue and contact stress verification, load path analysis using shear and bending moment diagrams, and the integration of standardized components into a manufacturable and maintainable mechanical assembly. ",
+              "This was the final project of my Aircraft Engineering minor, where our team designed a fixed-wing UAV for disaster relief. Starting from a mission profile, we worked through the complete conceptual design process, from selecting the aircraft configuration and airfoils to analysing performance, stability, structures, and propulsion.\n\n" +
+              "I really enjoyed this project because it brought together everything we had learned during the minor. It showed me that aircraft design is never about finding a single perfect solution, but about making engineering trade-offs between performance, weight, cost, and manufacturability."   ,
             column: "left"
           },
                     {
             type: "pdf",
-            src: "./pdf/Projects/Delft/Intro_to_Mech_Eng.pdf",
+            src: "./pdf/Projects/Delft/Aircraft_Eng_minor.pdf",
             fullWidth: false,
             column: "right"
-          },
-          {
-            type: "image",
-            src: require("./assets/images/Projects/Delft/Solid_Works.png"),
-            fullWidth: false,
-            caption: "SolidWORKS CAD project - April 21st 2024",
-            column: "left"
-          },
+          }
         ]
       }
     }
@@ -628,6 +618,42 @@ export const researchSection = {
   display: true,
   projects: [
     {
+      image: require("./assets/images/BigProjects/AIAA/AIAA_Cover.jpg"),
+      projectName:
+        "32nd AIAA/CEAS Aeroacoustics Conference",
+      projectDesc:
+        "Semi-Analytical Modeling of Blade Wake Deficits for Propeller-Wing Interaction in eVTOL Aeroacoustics",
+      modalContent: {
+        subtitle: "32nd AIAA/CEAS Aeroacoustics Conference",
+        content: [
+          {
+            type: "text",
+            value:
+"Presenting my research at the AIAA/CEAS Aeroacoustics Conference was one of the highlights of my Master's degree. Over the course of four days, I had the opportunity to attend technical sessions led by researchers and engineers from universities, research institutes, and companies from around the world, covering the latest developments in aeroacoustics across different applications. It was inspiring to see how the concepts I had been working on during my thesis connected to the broader research community.\n\n" +
+
+"One of the most rewarding aspects of the conference was presenting my own research to an international audience. Standing in front of experts who have spent years working in the field was both exciting and challenging, and it pushed me to communicate my work clearly and confidently. The questions and discussions that followed gave me valuable feedback and showed me how research develops through collaboration and the exchange of ideas.\n\n" +
+
+"Beyond the technical presentations, the conference was an excellent opportunity to network with researchers, PhD students, and industry professionals from across the world. Conversations during coffee breaks, poster sessions, and social events often turned into discussions about ongoing research, future developments in aerospace, and different career paths. Being able to represent the work I had carried out at the von Kármán Institute and contribute to the scientific community at an international conference was an experience I am incredibly grateful for. It strengthened my confidence as a researcher and further motivated me to pursue work at the intersection of computational fluid dynamics, aeroacoustics, and aircraft design.",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Big_Project/AIAA_conf.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+                    {
+            type: "image",
+            src: require("./assets/images/BigProjects/AIAA/AIAA_conf.jpg"),
+            caption: "32nd AIAA/CEAS Conference - May 27th 2026",
+            fullWidth: false,
+            column: "left"
+          },
+        ]
+      }
+    },
+    {
       image: require("./assets/images/BigProjects/MSC_Thesis/Cover.png"),
       projectName:
         "Master Thesis",
@@ -639,8 +665,19 @@ export const researchSection = {
           {
             type: "text",
             value:
-              "Comning Soon",
-            fullWidth: true,
+"This thesis was carried out at the von Kármán Institute for Fluid Dynamics in Brussels as part of the double-degree Master's programme between TU Delft and DTU. Over the course of nine months, I worked on developing a fast prediction method for propeller-wing interaction noise in eVTOL aircraft by combining CFD simulations with analytical aeroacoustic models.\n\n" +
+
+"Spending my thesis at the von Kármán Institute was one of the highlights of my studies. I really enjoyed being surrounded by researchers from all over the world and experiencing such an international research environment. One of the things I appreciated most was being able to attend VKI's lectures and training courses alongside my thesis work, learning about topics ranging from machine learning for fluid dynamics and flow control to the latest developments in computational aerodynamics. Together with the weekly discussions with my supervisors and colleagues, it made for an incredibly rewarding learning experience.\n\n"+
+
+"The project gave me the opportunity to dive deep into CFD, aeroacoustics, turbulence modelling, and scientific programming while learning how research is carried out in practice. Seeing the work grow from an initial idea into a complete thesis was an incredibly rewarding experience that strengthened my interest in computational aerodynamics and research.",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Big_Project/Master_thesis.pdf",
+            fullWidth: false,
+            column: "left"
           },
         ]
       }

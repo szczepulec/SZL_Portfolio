@@ -13,7 +13,7 @@ export default function ResearchModal({ project, onClose }) {
     };
   }, []);
 
-  const { subtitle, content } = project.modalContent;
+  const { content } = project.modalContent;
 
   const renderBlock = (block, index) => {
     const classNames = ["modal-block"];
@@ -113,7 +113,6 @@ export default function ResearchModal({ project, onClose }) {
         <div className="modal-header">
           <div className="modal-header-inner">
             <h2>{project.projectName}</h2>
-            <p>{subtitle}</p>
           </div>
         </div>
 

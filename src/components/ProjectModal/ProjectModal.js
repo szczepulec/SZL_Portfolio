@@ -13,7 +13,7 @@ export default function ProjectModal({ project, onClose }) {
     };
   }, []);
 
-  const { subtitle, content } = project.modalContent;
+  const { content } = project.modalContent;
 
   const renderBlock = (block, index) => {
     const classNames = ["modal-block"];
@@ -106,14 +106,25 @@ export default function ProjectModal({ project, onClose }) {
         }
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={onClose}>
-          ✕
-        </button>
+        <div className="project-modal-top-actions">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="project-modal-github-link"
+            >
+              View on GitHub
+            </a>
+          )}
+          <button className="project-modal-close" onClick={onClose}>
+            ✕
+          </button>
+        </div>
 
         <div className="modal-header">
           <div className="modal-header-inner">
             <h2>{project.projectName}</h2>
-            <p>{subtitle}</p>
           </div>
         </div>
 
@@ -142,19 +153,6 @@ export default function ProjectModal({ project, onClose }) {
               .map(renderBlock)}
           </div>
         </div>
-
-        {project.github && (
-          <div className="modal-github-wrapper">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="modal-github-link"
-            >
-              View on GitHub
-            </a>
-          </div>
-        )}
       </div>
     </div>
   );

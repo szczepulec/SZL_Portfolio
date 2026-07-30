@@ -31,7 +31,7 @@
   max-width: 1600px;
 
   border-radius: 18px;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 0.75rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -69,16 +69,8 @@
 /* ================= Header ================= */
 
 .modal-header {
-  margin-bottom: 1.5rem;
-}
-
-.modal-header h2 {
-  margin-bottom: 0.4rem;
-}
-
-.modal-header {
   margin: -2rem -2rem 1.5rem -2rem; /* extend to modal edges */
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -91,11 +83,7 @@
 }
 
 .modal-header-inner h2 {
-  margin-bottom: 0.3rem;
-}
-
-.modal-header-inner p {
-  opacity: 0.8;
+  margin: 0;
 }
 
 /* ================= Scrollable Body ================= */
@@ -156,7 +144,7 @@
 
 .modal-close {
   position: absolute;
-  top: 18px;
+  top: 7.5px;
   right: 24px;
   font-size: 26px;
   background: none;
