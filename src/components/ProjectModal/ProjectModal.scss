@@ -55,6 +55,12 @@
   margin: 0;
 }
 
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .two-column {
   display: flex;
   gap: 2rem;
@@ -62,10 +68,6 @@
 
 .modal-column {
   flex: 1;
-}
-
-.full-width-container {
-  margin-top: 2rem;
 }
 
 .modal-block {

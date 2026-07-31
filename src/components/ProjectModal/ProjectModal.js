@@ -15,6 +15,19 @@ export default function ProjectModal({ project, onClose }) {
 
   const { content } = project.modalContent;
 
+  // Group content into ordered sections so full-width blocks can be
+  // placed above or below column blocks just by reordering the data.
+  const sections = [];
+  content.forEach(block => {
+    const kind = block.fullWidth ? "fullWidth" : "columns";
+    const lastSection = sections[sections.length - 1];
+    if (!lastSection || lastSection.kind !== kind) {
+      sections.push({ kind, blocks: [block] });
+    } else {
+      lastSection.blocks.push(block);
+    }
+  });
+
   const renderBlock = (block, index) => {
     const classNames = ["modal-block"];
 
@@ -129,29 +142,40 @@ export default function ProjectModal({ project, onClose }) {
         </div>
 
         <div className="modal-body">
-          <div className="two-column">
-            <div className="modal-column left">
-              {content
-                .filter(
-                  block =>
-                    block.column === "left" ||
-                    (!block.column && !block.fullWidth)
-                )
-                .map(renderBlock)}
-            </div>
+          {sections.map((section, sectionIndex) => {
+            if (section.kind === "fullWidth") {
+              return (
+                <div className="full-width-container" key={sectionIndex}>
+                  {section.blocks.map((block, i) =>
+                    renderBlock(block, `${sectionIndex}-${i}`)
+                  )}
+                </div>
+              );
+            }
 
-            <div className="modal-column right">
-              {content
-                .filter(block => block.column === "right")
-                .map(renderBlock)}
-            </div>
-          </div>
+            const leftBlocks = section.blocks.filter(
+              block => block.column === "left" || !block.column
+            );
+            const rightBlocks = section.blocks.filter(
+              block => block.column === "right"
+            );
 
-          <div className="full-width-container">
-            {content
-              .filter(block => block.fullWidth)
-              .map(renderBlock)}
-          </div>
+            return (
+              <div className="two-column" key={sectionIndex}>
+                <div className="modal-column left">
+                  {leftBlocks.map((block, i) =>
+                    renderBlock(block, `${sectionIndex}-l-${i}`)
+                  )}
+                </div>
+
+                <div className="modal-column right">
+                  {rightBlocks.map((block, i) =>
+                    renderBlock(block, `${sectionIndex}-r-${i}`)
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -29,8 +29,7 @@ const greeting = {
     "Feel free to explore my journey and the knowledge I've gathered along the way.\n\n" +
     "- Szczepan Letkiewicz"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // TODO Change
+  resumeLink: "", // Set to a link to show the "Download my CV" button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -264,6 +263,81 @@ export const projectsSection = {
       }
     },
     {
+      image: require("./assets/images/Projects/Delft/Wind_Turbine_outside.png"), 
+      projectName: "Wind Turbine Design",
+      projectDesc:
+        "Three wind turbine engineering projects covering aerodynamic blade design, electrical drivetrain modelling, and full system-level turbine development. Together, they demonstrate a structured design approach integrating performance optimisation, structural considerations, economic analysis, and grid-connected power system design.",
+
+      language: "MatLAB",
+      color: "#ffcc00", 
+      size: "01-06.2025",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of DTU & TUDelft Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project applied the Blade Element Momentum (BEM) method to evaluate and optimise the aerodynamic performance of the DTU 10 MW reference wind turbine. Optimal tip speed ratio and pitch angle were determined using Glauert and Madsen correction models, followed by construction of power and thrust curves across the operational wind speed range and validation of aerodynamic load distributions against Ashes simulations. \n\n" + 
+              "\n\n" + 
+              "Through this work, I developed a deeper understanding of rotor aerodynamics, pitch regulation, controller-driven power limitation, annual energy production estimation using Weibull statistics, and gradient-based optimisation of blade chord and twist.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/WTT_1.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "video",
+            src: require("./assets/images/Projects/Delft/Wind_turbine.mp4"),
+            fullWidth: false,
+            caption: "DTU wind Turbine generator in Risø - November 20th 2024",
+            column: "left"
+          },
+          {
+            type: "text",
+            value:
+              "This assignment focused on modelling the electrical system of a 10 MW offshore wind turbine, including a permanent magnet synchronous generator, step-up transformer, subsea cable connection, and grid interface. Two MPPT control strategies were analysed using phasor diagrams and equivalent circuits, and nonlinear circuit equations were solved to evaluate generator losses, reactive power flow, and overall wind farm efficiency. \n\n" + 
+              "\n\n" + 
+              "From this project, I gained practical insight into complex power analysis, transformer and cable modelling, reactive power control, and the interaction between turbine control strategies and grid-level performance.",
+            column: "right"
+          },
+                    {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/WTT_2.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Wind_turbine_generator.png"),
+            fullWidth: false,
+            caption: "Wind turbine generator - November 20th 2024",
+            column: "right"
+          },
+                              {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Delft_WTT.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "text",
+            value:
+              "This project followed a structured, multidisciplinary design process for a 3.5 MW onshore wind turbine, starting from market analysis and site conditions and progressing through aerodynamic sizing, structural scaling, drivetrain selection, control design, and certification checks. \n\n" + 
+              "\n\n" + 
+              "The rotor diameter was optimised using Levelized Production Cost analysis, and aerodynamic performance was refined using BEM-based chord and twist optimisation. Through this work, I developed a stronger understanding of how aerodynamic efficiency, structural constraints, economic considerations, and grid integration requirements interact within a complete wind turbine system design.",
+            column: "left"
+          },
+
+        ]
+      }
+    }
+    ,
+    {
       image: require("./assets/images/Projects/Delft/cfd_animation.mp4"), 
       projectName: "Computational Fluid Dynamics",
       projectDesc:
@@ -398,81 +472,6 @@ export const projectsSection = {
     }
     ,
     {
-      image: require("./assets/images/Projects/Delft/Wind_Turbine_outside.png"), 
-      projectName: "Wind Turbine Design",
-      projectDesc:
-        "Three wind turbine engineering projects covering aerodynamic blade design, electrical drivetrain modelling, and full system-level turbine development. Together, they demonstrate a structured design approach integrating performance optimisation, structural considerations, economic analysis, and grid-connected power system design.",
-
-      language: "MatLAB",
-      color: "#ffcc00", 
-      size: "01-06.2025",
-      github: "", // optional
-
-      modalContent: {
-        subtitle: "Assingment report and code, part of DTU & TUDelft Master's course.",
-        content: [
-          {
-            type: "text",
-            value:
-              "This project applied the Blade Element Momentum (BEM) method to evaluate and optimise the aerodynamic performance of the DTU 10 MW reference wind turbine. Optimal tip speed ratio and pitch angle were determined using Glauert and Madsen correction models, followed by construction of power and thrust curves across the operational wind speed range and validation of aerodynamic load distributions against Ashes simulations. \n\n" + 
-              "\n\n" + 
-              "Through this work, I developed a deeper understanding of rotor aerodynamics, pitch regulation, controller-driven power limitation, annual energy production estimation using Weibull statistics, and gradient-based optimisation of blade chord and twist.",
-            column: "left"
-          },
-          {
-            type: "pdf",
-            src: "./pdf/Projects/Delft/WTT_1.pdf",
-            fullWidth: false,
-            column: "right"
-          },
-          {
-            type: "video",
-            src: require("./assets/images/Projects/Delft/Wind_turbine.mp4"),
-            fullWidth: false,
-            caption: "DTU wind Turbine generator in Risø - November 20th 2024",
-            column: "left"
-          },
-          {
-            type: "text",
-            value:
-              "This assignment focused on modelling the electrical system of a 10 MW offshore wind turbine, including a permanent magnet synchronous generator, step-up transformer, subsea cable connection, and grid interface. Two MPPT control strategies were analysed using phasor diagrams and equivalent circuits, and nonlinear circuit equations were solved to evaluate generator losses, reactive power flow, and overall wind farm efficiency. \n\n" + 
-              "\n\n" + 
-              "From this project, I gained practical insight into complex power analysis, transformer and cable modelling, reactive power control, and the interaction between turbine control strategies and grid-level performance.",
-            column: "right"
-          },
-                    {
-            type: "pdf",
-            src: "./pdf/Projects/Delft/WTT_2.pdf",
-            fullWidth: false,
-            column: "left"
-          },
-          {
-            type: "image",
-            src: require("./assets/images/Projects/Delft/Wind_turbine_generator.png"),
-            fullWidth: false,
-            caption: "Wind turbine generator - November 20th 2024",
-            column: "right"
-          },
-                              {
-            type: "pdf",
-            src: "./pdf/Projects/Delft/Delft_WTT.pdf",
-            fullWidth: false,
-            column: "right"
-          },
-          {
-            type: "text",
-            value:
-              "This project followed a structured, multidisciplinary design process for a 3.5 MW onshore wind turbine, starting from market analysis and site conditions and progressing through aerodynamic sizing, structural scaling, drivetrain selection, control design, and certification checks. \n\n" + 
-              "\n\n" + 
-              "The rotor diameter was optimised using Levelized Production Cost analysis, and aerodynamic performance was refined using BEM-based chord and twist optimisation. Through this work, I developed a stronger understanding of how aerodynamic efficiency, structural constraints, economic considerations, and grid integration requirements interact within a complete wind turbine system design.",
-            column: "left"
-          },
-
-        ]
-      }
-    }
-    ,
-    {
       image: require("./assets/images/Projects/Delft/Technical_Drawing.png"), 
       projectName: "Introduction to Mechanical Engineering",
       projectDesc:
@@ -535,6 +534,157 @@ export const projectsSection = {
                     {
             type: "pdf",
             src: "./pdf/Projects/Delft/Aircraft_Eng_minor.pdf",
+            fullWidth: false,
+            column: "right"
+          }
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/Projects/Delft/Antenna.png"),
+      projectName: "Fields and Waves",
+      projectDesc:
+        "Development of a directional Yagi-Uda antenna, from analytical design and COMSOL simulations to manufacturing and experimental validation.",
+
+      language: "COMSOL",
+      color: "#ff6600",
+      size: "02.2023",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and project plan, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "Designed, optimized, and physically built a 6-element Yagi-Uda antenna operating at 433 MHz for long-range wireless communication. The project involved analytical design, electromagnetic simulations in COMSOL, optimization of element lengths and spacing, impedance matching using an LC network, and experimental characterization of gain, directivity, and impedance. The final antenna was manufactured and tested to validate its performance against the simulation results, providing practical experience in RF design, prototyping, and experimental verification.",
+            fullWidth: true
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/FieldsandWaves_Project_Plan.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/FieldsandWaves_Final_Report.pdf",
+            fullWidth: false,
+            column: "right"
+          }
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/Projects/Delft/Control_Thoery.png"),
+      projectName: "Control Theory",
+      projectDesc:
+        "Development of a complete control system for a self-balancing Segway, including system modelling, state estimation, controller design, and experimental validation.",
+
+      language: "20-Sim",
+      color: "#00c2cc",
+      size: "11.2022",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and code, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project brought together everything developed throughout the course into a complete self-balancing Segway. Building upon the previously identified motor model, we developed a full dynamic model of the Segway, including its electrical, mechanical, and translational behaviour using bond graph modelling in 20-sim. \n\n" +
+              "\n\n" +
+              "A large part of the project focused on developing a reliable state estimator by combining gyroscope, accelerometer, and encoder measurements through complementary filtering. This allowed the Segway's orientation and motion to be estimated in real time, providing the information required for feedback control. \n\n" +
+              "\n\n" +
+              "With the model and state estimator in place, we designed an LQR controller to stabilize the inherently unstable system and implemented additional functionality to allow the Segway to be driven using a wireless gamepad. The complete system was then validated through simulations and experiments, comparing the predicted behaviour with measurements from the physical Segway. This project provided hands-on experience with modelling, state estimation, control theory, sensor fusion, and the implementation of embedded control systems.",
+            fullWidth: true
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/ControlTheory_Motor_Report.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/ControlTheory_Final_Report.pdf",
+            fullWidth: false,
+            column: "right"
+          }
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/Projects/Delft/Models and Signals.png"),
+      projectName: "Models and Signals",
+      projectDesc:
+        "Design and development of a single-wheel self-balancing robot, integrating mechanical design, dynamic modelling, embedded control, and sensor fusion.",
+
+      language: "MATLAB",
+      color: "#ffcc00",
+      size: "09.2022",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project involved designing and building a single-wheel self-balancing robot from the ground up, combining mechanical design, electronics, mathematical modelling, and embedded control. The robot was designed to be manufactured using 3D-printed components, with custom wheel and chassis assemblies housing the motor, sensors, battery, and control electronics. \n\n" +
+              "\n\n" +
+              "A dynamic model of the robot was developed using Lagrangian mechanics and linearized to obtain state-space and transfer function representations suitable for control design. Physical parameters including mass, inertia, and geometry were experimentally measured and incorporated into the model, allowing the system's open-loop behaviour to be analysed and validated through simulation. \n\n" +
+              "\n\n" +
+              "A PID controller was designed using the Ziegler–Nichols tuning method and implemented on an Arduino-based embedded platform. The robot's orientation was estimated using an IMU combining accelerometer and gyroscope measurements through Madgwick sensor fusion, providing filtered real-time attitude estimates for closed-loop balancing. The completed robot was experimentally evaluated by comparing simulated and physical system behaviour, integrating mechanical design, control theory, embedded programming, and sensor processing into a complete autonomous balancing system.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Models&Signals_Final_Report.pdf",
+            fullWidth: false,
+            column: "right"
+          }
+        ]
+      }
+    },
+    {
+      image: require("./assets/images/Projects/Delft/Accelerometer_1_cover.png"),
+      projectName: "Dynamical Systems",
+      projectDesc:
+        "Design, modelling, construction, and characterization of a wireless capacitive accelerometer for impact detection in remote-controlled vehicles.",
+
+      language: "MATLAB",
+      color: "#ffcc00",
+      size: "07.2022",
+      github: "", // optional
+
+      modalContent: {
+        subtitle: "Assingment report and project plan, part of UTwente Bachelor's course.",
+        content: [
+          {
+            type: "image",
+            src: require("./assets/images/Projects/Delft/Accelerometer_2.jpg"),
+            column: "right"
+          },
+          {
+            type: "text",
+            value:
+              "This project focused on developing a custom wireless capacitive accelerometer capable of measuring impacts experienced by a remote-controlled car. Starting from the system requirements, we designed the sensing principle, selected suitable materials, modelled the dynamic behaviour of the mass-spring system, and developed the complete mechanical and electronic design. \n\n" +
+              "\n\n" +
+              "The sensing unit was based on a differential capacitive accelerometer inspired by MEMS devices, using a suspended proof mass supported by 3D-printed cantilever beams. The mechanical components were designed in Fusion 360, while analytical models were used to determine the required spring stiffness, natural frequency, and dynamic response. Alongside the mechanical design, we developed the electronics using an Arduino Uno, an ESP8266 WiFi module, and custom circuitry to measure capacitance, convert it into acceleration, and transmit the measurements wirelessly to a mobile device. \n\n" +
+              "\n\n" +
+              "Once the design was completed, the accelerometer was manufactured using 3D printing, assembled with custom-machined components, and experimentally characterized. Both static and dynamic tests were carried out to evaluate the sensor's behaviour, including calibration, frequency response measurements, and comparison with the analytical model. The project provided valuable experience in combining mechanical design, electronics, embedded programming, manufacturing, and experimental testing into the development of a complete sensing device.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Accelerometer_Project_Plan.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Accelerometer_Final_Report.pdf",
             fullWidth: false,
             column: "right"
           }

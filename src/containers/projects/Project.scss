@@ -6,28 +6,16 @@
 }
 
 .repo-cards-div-main {
-  column-count: 4;
-  column-gap: 1.5rem;
-
-  direction: rtl;   // ← add this
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
-@media (max-width: 1400px) {
-  .repo-cards-div-main {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 1000px) {
-  .repo-cards-div-main {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 768px) {
-  .repo-cards-div-main {
-    column-count: 1;
-  }
+.repo-cards-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .main#portfolio {
@@ -37,8 +25,5 @@
 
 
 .project-card-wrapper {
-  break-inside: avoid;
   margin-bottom: 1.5rem;
-
-  direction: ltr;   // ← important
 }
