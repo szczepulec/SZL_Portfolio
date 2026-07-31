@@ -112,7 +112,7 @@ export const projectsSection = {
   display: true,
   projects: [
     {
-      image: require("./assets/images/Projects/Delft/PIV_image.jpg"),
+      image: require("./assets/images/Projects/Delft/PIV_image.png"),
       projectName: "Flow Measurement Techniques",
       projectDesc:
         "Wind Tunnel Experiments including PIV, Hotwire Anemometry, and Pressure Probes.",
