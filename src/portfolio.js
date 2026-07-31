@@ -703,7 +703,7 @@ export const researchSection = {
       }
     },
     {
-      image: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_cover.jpg"),
+      image: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_cover.png"),
       projectName:
         "Bachelor Thesis",
       projectDesc:
