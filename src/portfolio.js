@@ -703,7 +703,7 @@ export const researchSection = {
       }
     },
     {
-      image: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_wind_Tunnel_1.jpg"),
+      image: require("./assets/images/BigProjects/BSC_Thesis/BSC_Thesis_cover.jpg"),
       projectName:
         "Bachelor Thesis",
       projectDesc:
