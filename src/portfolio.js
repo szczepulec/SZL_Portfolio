@@ -50,18 +50,22 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Technical Skills",
   subTitle:
-    "Experience with simulation software, experimental aerodynamics, and advanced engineering analysis tools.",
+    "Experience with simulation software, experimental aerodynamics, and structural testing.",
 
   skills: [
     emoji(
-      "⚡ Numerical simulation of aerodynamic flows using CFD tools (RANS/LES), turbulence modelling, and mesh generation"
+      "⚡ Static and endurance test design and execution in a hands-on workshop environment"
     ),
     emoji(
       "⚡ Experimental wind tunnel testing including PIV, hot-wire anemometry, and pressure measurement techniques"
     ),
     emoji(
       "⚡ Post-processing, data analysis, and visualization using MATLAB, ParaView, and Python"
+    ),
+    emoji(
+      "⚡ Numerical simulation of aerodynamic flows using CFD tools (RANS/LES), turbulence modelling, and mesh generation"
     )
+    
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
