@@ -111,6 +111,56 @@ export const projectsSection = {
   display: true,
   projects: [
     {
+      image: require("./assets/images/Projects/Delft/Experimental_acoustics_cover.jpg"),
+      projectName: "Experimental Acoustics",
+      projectDesc:
+        "Experimental acoustics projects covering airfoil self-noise, room acoustics, acoustic measurements, and signal processing.",
+
+      language: "Python",
+      color: "#006eff",
+      size: "10.2025",
+      github: "https://github.com/szczepulec/Experimental-Aeroacoustics", // optional
+
+      modalContent: {
+        subtitle: "Assingment reports and code, part of TU Delft Master's course.",
+        content: [
+          {
+            type: "text",
+            value:
+              "This project focused on the experimental investigation of airfoil self-noise using measurements from a 64-microphone phased array in the A-Tunnel at TU Delft. Using measurement data from a NACA 0018 airfoil over a range of flow conditions, I analysed the acoustic behaviour associated with trailing-edge noise, laminar boundary-layer vortex shedding, and flow separation. \n\n" +
+              "\n\n" +
+              "A large part of the project involved processing and analysing acoustic measurements using MATLAB. This included calculating power spectral densities with Welch's method, determining sound pressure levels and overall sound pressure levels, identifying tonal noise, comparing experimental measurements with semi-empirical prediction models, and studying how airfoil noise changes with angle of attack and flow velocity. \n\n" +
+              "\n\n" +
+              "In addition, phased-array beamforming techniques were used to localize noise sources on the airfoil and isolate trailing-edge noise from the surrounding acoustic field. The project provided valuable experience in aeroacoustic measurement techniques, acoustic signal processing, phased-array analysis, and the interpretation of experimental aerodynamic data.",
+            column: "left"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Experimental_Aeroacoustics.pdf",
+            fullWidth: false,
+            column: "right"
+          },
+          {
+            type: "pdf",
+            src: "./pdf/Projects/Delft/Acoustics_Lab_Report.pdf",
+            fullWidth: false,
+            column: "left"
+          },
+          {
+            type: "text",
+            value:
+              "This laboratory project focused on measuring and analysing the acoustic properties of an enclosed space using standard room acoustics techniques. A series of experiments were carried out to investigate room modes, reverberation time, and sound power measurements under different acoustic treatment configurations. \n\n" +
+              "\n\n" +
+              "The work involved calculating theoretical room eigenfrequencies, performing experimental modal analysis, measuring reverberation times using interrupted noise measurements, and comparing different room configurations including absorbers and diffusers. In addition, sound power levels of a vacuum cleaner were determined using reverberation room methods, requiring careful measurement procedures, averaging over multiple microphone positions, and comparison with theoretical predictions. \n\n" +
+              "\n\n" +
+              "Throughout the project I gained practical experience with acoustic measurement equipment, experimental data processing, signal analysis, and the application of room acoustics principles to real engineering problems. It provided a solid introduction to experimental acoustics and the techniques used to characterize and improve acoustic environments.",
+            column: "right"
+          }
+        ]
+      }
+    }
+    ,
+    {
       image: require("./assets/images/Projects/Delft/PIV_image.png"),
       projectName: "Flow Measurement Techniques",
       projectDesc:
@@ -690,7 +740,7 @@ export const projectsSection = {
           }
         ]
       }
-    }
+    },
   ]
 };
 
@@ -747,8 +797,9 @@ const workExperiences = {
       role: "Intern in Structural and System Testing",
       company: "Pilatus Aircraft",
       companylogo: require("./assets/images/Pilatus_Aircraft.png"),
-      date: "Starting Aug 2026",
-      desc: "Coming soon",
+      className: "pilatus-card",
+      date: "Aug 2026 - Feb 2027",
+      desc: "Designing and conducting endurance tests on aircraft components, including test planning, setup, execution, and evaluation. Supporting ongoing structural testing through instrumentation, sensor installation, and data acquisition, contributing to test validation and reliable measurement of aerospace components.",
       //descBullets: [
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //]

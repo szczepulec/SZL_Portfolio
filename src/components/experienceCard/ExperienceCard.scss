@@ -161,7 +161,8 @@
 /* ===================================================== */
 
 .rise-card .experience-banner,
-.vki-card .experience-banner {
+.vki-card .experience-banner,
+.pilatus-card .experience-banner {
   background-size: 100% auto !important;   /* fit width */
   background-position: center center !important; /* center vertically */
   background-repeat: no-repeat !important;
@@ -174,4 +175,8 @@
 
 .vki-card .experience-banner {
   background-image: url("../../assets/images/vki-background.jpg") !important;
+}
+
+.pilatus-card .experience-banner {
+  background-image: url("../../assets/images/PC_24.jpg") !important;
 }
