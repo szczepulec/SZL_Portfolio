@@ -817,7 +817,7 @@ const workExperiences = {
       desc: "Conducting aeroacoustic research focused on propeller–wing interaction noise. Developing neural network–based surrogate models trained on high-fidelity CFD and acoustic simulation data to predict tonal and broadband noise signatures."
     },
     {
-      role: "Vehicle Control & Test Engineer",
+      role: "Mechanical & Test Engineer",
       company: "RISE Student Team",
       companylogo: require("./assets/images/RISE.png"),
       className: "rise-card",

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import { initGA } from "./analytics";
+import { notifyVisit } from "./visitNotifier";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -34,6 +35,7 @@ function App() {
 
   useEffect(() => {
     initGA();
+    notifyVisit();
   }, []);
 
   return (
