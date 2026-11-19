@@ -24,7 +24,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          REACT_APP_VISIT_NOTIFY_URL: https://script.google.com/macros/s/AKfycby4Rv8n8rhXg0HQx9oFyEmoxdWWN6jDOVwoDle_LFKCdp2FuF1rgXIR7S3XerZIyBlZfA/exec
+          REACT_APP_VISIT_NOTIFY_URL: https://script.google.com/macros/s/AKfycbwicQftIv3E0xup4VfXboe55tf2JwSmbFEzzZGo33ch9J4QTelQsxXtF4mCWglJiDhNow/exec
 
       - uses: actions/upload-pages-artifact@v3
         with:
